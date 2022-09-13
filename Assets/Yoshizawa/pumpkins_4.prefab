@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2063959796701093756
+--- !u!1 &1641335463589890606
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,11 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2655078215610385622}
-  - component: {fileID: 6740603808595656193}
-  - component: {fileID: 4546386559542301245}
-  - component: {fileID: 8311123859821379136}
-  - component: {fileID: 4294691607532573431}
+  - component: {fileID: 7118825498199420278}
+  - component: {fileID: 7047092360372366471}
+  - component: {fileID: 2061916116376681456}
+  - component: {fileID: 787658168134626848}
+  - component: {fileID: 3701378688663947950}
+  - component: {fileID: 397828329583036476}
   m_Layer: 0
   m_Name: pumpkins_4
   m_TagString: Untagged
@@ -20,28 +21,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2655078215610385622
+--- !u!4 &7118825498199420278
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063959796701093756}
+  m_GameObject: {fileID: 1641335463589890606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -282.38715, y: 25.099686, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -118.61, y: 10.147, z: 0}
+  m_LocalScale: {x: 0.20413092, y: 0.20413092, z: 0.20413092}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6740603808595656193
+--- !u!212 &7047092360372366471
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063959796701093756}
+  m_GameObject: {fileID: 1641335463589890606}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -87,13 +88,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &4546386559542301245
+--- !u!70 &2061916116376681456
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063959796701093756}
+  m_GameObject: {fileID: 1641335463589890606}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -103,13 +104,13 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0000003857224, y: -3.2356744}
   m_Size: {x: 53.00003, y: 35.007}
   m_Direction: 1
---- !u!61 &8311123859821379136
+--- !u!61 &787658168134626848
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063959796701093756}
+  m_GameObject: {fileID: 1641335463589890606}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -129,16 +130,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.677597, y: 6.716034}
   m_EdgeRadius: 0
---- !u!114 &4294691607532573431
+--- !u!114 &3701378688663947950
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063959796701093756}
+  m_GameObject: {fileID: 1641335463589890606}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7895ceadad491cf4483a5f9390b61a22, type: 3}
+  m_Script: {fileID: 11500000, guid: ff7339e2dea0b4d46888783a31cd62f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Rigidbody2D: {fileID: 0}
+--- !u!50 &397828329583036476
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641335463589890606}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
