@@ -6,6 +6,7 @@ public class P2komaContlrol : MonoBehaviour
 {
     [SerializeField] Rigidbody2D _Rigidbody2D;
     bool _Gravity;
+    bool _Ground;
     float _time =0;
 
     private void Start()
@@ -39,35 +40,30 @@ public class P2komaContlrol : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.KeypadEnter))
                 {
                     _Rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
-                    _Gravity = true;
-                }
+                _Gravity = true;
+
             }
-        //    else if(_Gravity)
-        //{
-        //}
-            else
+        }
+      
+            else if(_Ground)
             {
                 float x = gameObject.transform.position.x;
                 float y = gameObject.transform.position.y;
                 if (x < 0.1f && y < 0.1f)
                 {
                     Debug.Log("‚¤");
-                _time += Time.deltaTime;
-                _time = 0;
-                if (_time < 5) return;
-                {
+              
                     // Instantiate
-
                 }
-
-
-            }
             }
         
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag("Stage"))
-            { }
+        {
+            _Ground = true;
+        
+        }
     }
 }
