@@ -9,12 +9,8 @@ public class P1komaContlrol : MonoBehaviour
     bool _Ground;
     private void Start()
     {
-        
         _Rigidbody2D = GetComponent<Rigidbody2D>();
     }
-
-
-
     void Update()
     {
        
@@ -49,10 +45,7 @@ public class P1komaContlrol : MonoBehaviour
                 if (x < 0.1f && y < 0.1f)
                 {
                     Debug.Log("‚¤");
-               
                     // Instantiate
-
-                
                 }
            }
         

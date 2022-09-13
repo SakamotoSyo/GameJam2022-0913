@@ -7,7 +7,6 @@ public class P2komaContlrol : MonoBehaviour
     [SerializeField] Rigidbody2D _Rigidbody2D;
     bool _Gravity;
     bool _Ground;
-    float _time =0;
 
     private void Start()
     {
@@ -60,7 +59,7 @@ public class P2komaContlrol : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Stage"))
+        if(collision.gameObject.CompareTag("Stage")/*|| collision.gameObject.CompareTag("‹î‚Ìƒ^ƒO") */ )
         {
             _Ground = true;
         
