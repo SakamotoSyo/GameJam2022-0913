@@ -286,8 +286,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 422}
-  m_SizeDelta: {x: 584.7432, y: 151.355}
+  m_AnchoredPosition: {x: 0, y: 389}
+  m_SizeDelta: {x: 997.0887, y: 151.355}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &276356479
 MonoBehaviour:
@@ -322,7 +322,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u64CD\u4F5C\u65B9\u6CD5"
+  m_Text: "\u305D\u3046\u3055\u307B\u3046\u307B\u3046"
 --- !u!222 &276356480
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -855,8 +855,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000021696, y: -114}
-  m_SizeDelta: {x: 1847.0631, y: 425.2281}
+  m_AnchoredPosition: {x: 0.000021696, y: -64.76111}
+  m_SizeDelta: {x: 1847.0631, y: 357.3087}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1907493853
 MonoBehaviour:
@@ -880,7 +880,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 6595b38037820c249b6cbf694b8f0645, type: 3}
-    m_FontSize: 95
+    m_FontSize: 86
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -891,8 +891,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u3077\u308C\u3044\u3084\u30FC 1\u306FA/D\u30FB2\u306F4/6\u3067\u5DE6\u53F3\u79FB\u52D5\r\n\u3077\u308C\u3044\u3084\u30FC
-    1\u306FQ/E\u30FB2\u306F7/9\u56DE\u8EE2\r\n\u3077\u308C\u3044\u3084\u30FC 1\u306FSPACE\u30FB2\u306FENTET\u3067\u843D\u3068\u3059\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3060\u3088\u2661"
+  m_Text: "\u3077\u308C\u3044\u3084\u30FC 1\u306FA/D\u30FB2\u306F4/6\u3067\u3055\u3086\u3046\u3044\u3069\u3046\n\u3077\u308C\u3044\u3084\u30FC
+    1\u306FQ/E\u30FB2\u306F7/9\u3067\u304B\u3044\u3066\u3093\n\u3077\u308C\u3044\u3084\u30FC
+    1\u306F\u3059\u307A\u30FC\u3059\u30FB2\u306F\u3048\u3093\u305F\u30FC\u3067\u304A\u3068\u3059\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3060\u3088\u2661"
 --- !u!222 &1907493854
 CanvasRenderer:
   m_ObjectHideFlags: 0
