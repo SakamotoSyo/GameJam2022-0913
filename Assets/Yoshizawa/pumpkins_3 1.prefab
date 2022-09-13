@@ -15,8 +15,9 @@ GameObject:
   - component: {fileID: 6131229391536408073}
   - component: {fileID: 2956634978196315903}
   - component: {fileID: 4403476092100870368}
+  - component: {fileID: 8785624937177291603}
   m_Layer: 0
-  m_Name: pumpkins_3
+  m_Name: pumpkins_3 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192,3 +193,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 53, y: 46}
   m_EdgeRadius: 0
+--- !u!114 &8785624937177291603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6368561595454875781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ade0fe88ebc4c44b5b7bdcc7e0f852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Rigidbody2D: {fileID: 0}
+  _generator: {fileID: 0}

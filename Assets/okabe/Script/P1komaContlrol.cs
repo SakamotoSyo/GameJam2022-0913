@@ -6,11 +6,13 @@ public class P1komaContlrol : MonoBehaviour
 {
     [SerializeField] Rigidbody2D _Rigidbody2D;
     [SerializeField] Generator _generator;
+    GameManager _gameManager;
     bool _Gravity;
     bool _Ground;
     bool _ins;
     void Start()
     {
+        _gameManager = GameManager.Instance;
         _generator = GameObject.Find("P1Generator").GetComponent<Generator>();
         _Rigidbody2D = GetComponent<Rigidbody2D>();
     }
@@ -19,13 +21,13 @@ public class P1komaContlrol : MonoBehaviour
 
         if (!_Gravity)
         {
-            if (Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKey(KeyCode.A))
             {
-                transform.position = transform.position + new Vector3(-0.1f, 0, 0);
+                transform.position = transform.position + new Vector3(-0.01f, 0, 0);
             }
-            if (Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKey(KeyCode.D))
             {
-                transform.position = transform.position + new Vector3(0.1f, 0, 0);
+                transform.position = transform.position + new Vector3(0.01f, 0, 0);
             }
             if (Input.GetKeyDown(KeyCode.Q))
             {
@@ -49,6 +51,7 @@ public class P1komaContlrol : MonoBehaviour
             {
                 Debug.Log("‚¤");
                 _generator.ItemGenerator();
+                _gameManager.Player1AddScore();
                 _ins = true;
             }
         }
@@ -57,5 +60,10 @@ public class P1komaContlrol : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         _Ground = true;
+
+        if (collision.CompareTag("DeadSpace"))
+        {
+            _gameManager.GameEnd("P1");
+        }
     }
 }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7544563411845726135}
   - component: {fileID: 8237694358744698740}
   - component: {fileID: 6805144133041504797}
-  - component: {fileID: 3601466933552834352}
+  - component: {fileID: 3609242002977460461}
   m_Layer: 0
   m_Name: pumpkins_8
   m_TagString: Untagged
@@ -130,7 +130,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.27348328, y: 3.4184341}
@@ -193,7 +193,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &3601466933552834352
+--- !u!61 &3609242002977460461
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,7 +203,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

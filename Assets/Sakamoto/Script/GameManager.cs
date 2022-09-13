@@ -17,6 +17,9 @@ public class GameManager : SingletonBehaviour<GameManager>
     [Header("Playerの勝利テキスト")]
     [SerializeField] List<GameObject> _winText = new List<GameObject>();
 
+    int _player1Score = 0;
+    int _player2Score = 0;
+
     private Turn _nowTurn = Turn.WaitTurn;
     public Turn NowTurn => _nowTurn;
 
@@ -58,5 +61,15 @@ public class GameManager : SingletonBehaviour<GameManager>
         }
 
         _nowTurn = Turn.GameEnd;
+    }
+
+    public void Player1AddScore() 
+    {
+        _player1Score++;
+    }
+
+    public void Player2AddScore()
+    {
+        _player2Score++;
     }
 }
