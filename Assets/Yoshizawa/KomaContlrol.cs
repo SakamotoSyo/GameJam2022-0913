@@ -2,19 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class P1komaContlrol : MonoBehaviour
+[RequireComponent(typeof(Rigidbody2D))]
+
+public class KomaContlrol : MonoBehaviour
 {
-    [SerializeField] Rigidbody2D _Rigidbody2D;
-    bool _Gravity;
-    bool _Ground;
+    Rigidbody2D _rb;
+    bool _gravity;
+    bool _ground;
     private void Start()
     {
-        _Rigidbody2D = GetComponent<Rigidbody2D>();
+
+        _rb = GetComponent<Rigidbody2D>();
     }
+
     void Update()
     {
-       
-            if (!_Gravity)
+            if (!_gravity)
             {
                 if (Input.GetKeyDown(KeyCode.A))
                 {
@@ -34,27 +37,26 @@ public class P1komaContlrol : MonoBehaviour
                 }
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
-                    _Rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
-                    _Gravity = true;
+                _rb.bodyType = RigidbodyType2D.Dynamic;
+                    _gravity = true;
                 }
             }
-            else if(_Ground)
+            else if(_ground)
             {
                 float x = gameObject.transform.position.x;
                 float y = gameObject.transform.position.y;
                 if (x < 0.1f && y < 0.1f)
                 {
-                    Debug.Log("‚¤");
-                    // Instantiate
+                    Debug.Log("OK");
                 }
            }
         
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Stage") /*|| collision.gameObject.CompareTag("‹î‚Ìƒ^ƒO") */ )
+        if(collision.gameObject.CompareTag("Stage"))
         {
-            _Ground = true;
+            _ground = true;
         }
     }
 }
