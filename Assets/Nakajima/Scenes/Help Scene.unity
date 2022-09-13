@@ -668,7 +668,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 6595b38037820c249b6cbf694b8f0645, type: 3}
-    m_FontSize: 101
+    m_FontSize: 96
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -679,7 +679,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "P1\u306FA/D\u30FB2\u306F4/6\u3067\u5DE6\u53F3\u79FB\u52D5\r\nP1\u306FQ/E\u30FB2\u306F7/9\u56DE\u8EE2\r\nP1\u306FSPACE\u30FB2\u306FENTET\u3067\u843D\u3068\u3059\n\u3067\u3059\u2661"
+  m_Text: "Player 1\u306FA/D\u30FB2\u306F4/6\u3067\u5DE6\u53F3\u79FB\u52D5\r\nPlayer
+    1\u306FQ/E\u30FB2\u306F7/9\u56DE\u8EE2\r\nPlayer 1\u306FSPACE\u30FB2\u306FENTET\u3067\u843D\u3068\u3059\n\u3067\u3059\u2661"
 --- !u!222 &1907493854
 CanvasRenderer:
   m_ObjectHideFlags: 0
