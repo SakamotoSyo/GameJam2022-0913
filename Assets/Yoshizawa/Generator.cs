@@ -12,6 +12,7 @@ public class Generator : MonoBehaviour
     void Start()
     {
         _bc = GetComponent<BoxCollider2D>();
+        ItemGenerator();
     }
 
     public void ItemGenerator()
