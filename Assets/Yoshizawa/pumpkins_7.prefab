@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 654443285739774584}
   - component: {fileID: 7323617783278013953}
   - component: {fileID: 4265058141394629545}
-  - component: {fileID: 3050497604830899329}
+  - component: {fileID: 7579135628448952685}
   m_Layer: 0
   m_Name: pumpkins_7
   m_TagString: Untagged
@@ -167,7 +167,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &3050497604830899329
+--- !u!61 &7579135628448952685
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
