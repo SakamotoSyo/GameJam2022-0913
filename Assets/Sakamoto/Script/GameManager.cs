@@ -14,6 +14,8 @@ public class GameManager : SingletonBehaviour<GameManager>
 
     [SerializeField] Text _Timer;
 
+    [SerializeField] public Rigidbody _Rigidbody;
+
     [Header("Playerの勝利テキスト")]
     [SerializeField] List<GameObject> _winText = new List<GameObject>();
 
