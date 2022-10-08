@@ -14,13 +14,18 @@ public class GameManager : SingletonBehaviour<GameManager>
 
     [SerializeField] Text _Timer;
 
+    [SerializeField] public Rigidbody _Rigidbody;
+
     [Header("Playerの勝利テキスト")]
     [SerializeField] List<GameObject> _winText = new List<GameObject>();
+
+    [Header("ScoreText")]
+    [SerializeField] Text[] _scoreText;
 
     int _player1Score = 0;
     int _player2Score = 0;
 
-    private Turn _nowTurn = Turn.WaitTurn;
+    private Turn _nowTurn = Turn.GameStart;
     public Turn NowTurn => _nowTurn;
 
     void Start()
@@ -32,7 +37,7 @@ public class GameManager : SingletonBehaviour<GameManager>
      {
         if (_nowTurn == Turn.GameEnd && Input.GetButtonDown("Submit")) 
         {
-            //SceneLoadManage
+            SceneLoadManager.Instance.ChangeScene("Title Scene");
         }
      }
 
@@ -51,11 +56,11 @@ public class GameManager : SingletonBehaviour<GameManager>
     /// <param name="playerName"></param>
     public void GameEnd(string playerName) 
     {
-        if (playerName == "P1")
+        if (playerName == "P1" && _nowTurn == Turn.GameStart)
         {
             _winText[0].SetActive(true);
         }
-        else if (playerName == "P2") 
+        else if (playerName == "P2" && _nowTurn == Turn.GameStart) 
         {
             _winText[1].SetActive(true);
         }
@@ -66,10 +71,12 @@ public class GameManager : SingletonBehaviour<GameManager>
     public void Player1AddScore() 
     {
         _player1Score++;
+        _scoreText[0].text = _player1Score.ToString();
     }
 
     public void Player2AddScore()
     {
         _player2Score++;
+        _scoreText[1].text = _player2Score.ToString();
     }
 }

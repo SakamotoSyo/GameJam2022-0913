@@ -51,6 +51,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Rigidbody2D: {fileID: 2956634978196315903}
   _generator: {fileID: 0}
+  _boxCollider2D: {fileID: 6131229391536408073}
+  _fallTime: 1.5
+  _slider: {fileID: 0}
 --- !u!212 &7382788965533794169
 SpriteRenderer:
   m_ObjectHideFlags: 0
