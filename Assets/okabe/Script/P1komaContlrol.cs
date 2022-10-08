@@ -9,7 +9,7 @@ public class P1komaContlrol : MonoBehaviour
     [SerializeField] Generator _generator;
     //[SerializeField] BoxCollider2D _boxCollider2D;
     [Header("‹­§“I‚É—‚¿‚éŠÔ")]
-    [SerializeField]float _fallTime = 1.5f;
+    float _fallTime;
     [SerializeField] Slider _slider;
     GameManager _gameManager;
     bool _Gravity;
@@ -19,6 +19,7 @@ public class P1komaContlrol : MonoBehaviour
     
     void Start()
     {
+        _fallTime = 2.5f;
         _slider = GameObject.Find("P1Canvas/P1Slider").GetComponent<Slider>();
         _slider.maxValue = 1;
         _gameManager = GameManager.Instance;
