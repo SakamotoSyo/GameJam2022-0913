@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 749736596680995549}
   - component: {fileID: 2493391816185533352}
-  - component: {fileID: 5152215575099771891}
   - component: {fileID: 734842391085706468}
   - component: {fileID: -8828796567670955525}
   - component: {fileID: 1929649733157434303}
+  - component: {fileID: 3467555973431039929}
   m_Layer: 0
   m_Name: semi pumpkins_2 1
   m_TagString: Untagged
@@ -88,39 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &5152215575099771891
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7792871535001692820}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 21.799393, y: -26.80423}
-  - {x: -17.40414, y: -26.420786}
-  - {x: -17.998978, y: -26.420792}
-  - {x: -19.869019, y: 5.3715973}
-  - {x: -24.136017, y: 5.4243927}
-  - {x: -17.867813, y: 17.293701}
-  - {x: -10.817001, y: 8.116592}
-  - {x: 0.97078466, y: 27.383905}
-  - {x: 10.270447, y: 11.136917}
-  - {x: 9.8237915, y: 1.4967041}
-  - {x: 18.508783, y: 9.221278}
-  - {x: 22.041168, y: 0.8715515}
-  - {x: 21.256271, y: -27.015305}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!50 &734842391085706468
 Rigidbody2D:
   serializedVersion: 4
@@ -182,3 +149,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Rigidbody2D: {fileID: 0}
   _generator: {fileID: 0}
+  _slider: {fileID: 0}
+  _fallTime: 1.5
+--- !u!60 &3467555973431039929
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7792871535001692820}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 47, y: 54}
+    newSize: {x: 47, y: 54}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 6.8946733, y: 9.584747}
+      - {x: 10.263692, y: 10.283051}
+      - {x: 1.4934695, y: 26.331156}
+      - {x: -4.175374, y: 18.555405}
+      - {x: -9.008545, y: 11.211106}
+      - {x: -4.5979004, y: 10.709401}
+      - {x: -4.747945, y: 7.1239724}
+      - {x: -5.061847, y: 0.8144319}
+      - {x: -12.473308, y: 0.26129186}
+      - {x: -12.256673, y: 6.6726127}
+      - {x: -10.159139, y: 7.889374}
+      - {x: -17.827515, y: 17.004492}
+      - {x: -22.72587, y: 6.164012}
+      - {x: -19.370972, y: 5.8511543}
+      - {x: -17.25317, y: -3.6749077}
+      - {x: -18.451433, y: -7.936991}
+      - {x: -18.446348, y: -12.0915785}
+      - {x: -16.296385, y: -12.013631}
+      - {x: -16.493223, y: -25.910572}
+      - {x: 20.661926, y: -25.986103}
+      - {x: 20.507303, y: -13.011047}
+      - {x: 22.454834, y: -12.900674}
+      - {x: 22.34192, y: -8.983744}
+      - {x: 19.569399, y: -9.04071}
+      - {x: 19.728088, y: -0.13339233}
+      - {x: 22.421776, y: -0.08176708}
+      - {x: 18.278503, y: 9.304804}
+      - {x: 12.142946, y: 0.93739307}
+      - {x: 14.486187, y: 0.7719623}
+      - {x: 13.461813, y: -6.252421}
+      - {x: 9.771668, y: -6.067322}
+      - {x: 9.800721, y: 1.9041643}
+      - {x: 7.0636606, y: 2.055812}
