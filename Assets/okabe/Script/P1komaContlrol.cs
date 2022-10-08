@@ -5,16 +5,14 @@ using UnityEngine.UI;
 
 public class P1komaContlrol : MonoBehaviour
 {
-    [SerializeField] Rigidbody2D _Rigidbody2D;
+    [SerializeField] Rigidbody2D _rb;
     [SerializeField] Generator _generator;
-    //[SerializeField] BoxCollider2D _boxCollider2D;
-    [Header("ã≠êßìIÇ…óéÇøÇÈéûä‘")]
     float _fallTime;
     [SerializeField] Slider _slider;
     GameManager _gameManager;
-    bool _Gravity;
-    bool _Ground;
-    bool _ins;
+    bool _isGravity;
+    bool _isGround;
+    bool _isInstance;
 
     
     void Start()
@@ -24,17 +22,17 @@ public class P1komaContlrol : MonoBehaviour
         _slider.maxValue = 1;
         _gameManager = GameManager.Instance;
         _generator = GameObject.Find("P1Generator").GetComponent<Generator>();
-        _Rigidbody2D = GetComponent<Rigidbody2D>();
+        _rb = GetComponent<Rigidbody2D>();
     }
     void Update()
     {
-        if (!_ins) 
+        if (!_isInstance) 
         {
             _fallTime -= Time.deltaTime;
             _slider.value = _fallTime;
         }
 
-        if (!_Gravity)
+        if (!_isGravity)
         {
             if (Input.GetKey(KeyCode.A))
             {
@@ -54,19 +52,16 @@ public class P1komaContlrol : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.Space) || _fallTime < 0)
             {
-               // _boxCollider2D.enabled = true;
-                _Rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
-                _Gravity = true;
+                _rb.bodyType = RigidbodyType2D.Dynamic;
+                _isGravity = true;
             }
         }
-        else if (!_ins && _Gravity && _Ground)
-        {
-            //float x = gameObject.transform.position.x;
-            //float y = gameObject.transform.position.y;
-            if (_Rigidbody2D.velocity == new Vector2(0, 0))
+        else if (!_isInstance && _isGravity && _isGround)
+        {            
+            if (_rb.velocity == new Vector2(0, 0))
             {
-                Debug.Log("Ç†Çì");
-                _ins = true;
+                Debug.Log("good");
+                _isInstance = true;
                 _generator.ItemGenerator();
                 _gameManager.Player1AddScore();
             }
@@ -75,9 +70,9 @@ public class P1komaContlrol : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (_Gravity) 
+        if (_isGravity) 
         {
-            _Ground = true;
+            _isGround = true;
         }
         
 
