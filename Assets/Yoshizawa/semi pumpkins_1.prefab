@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 4394985781131559239}
   - component: {fileID: 1507514322487004402}
   - component: {fileID: 5194709132456695634}
-  - component: {fileID: 3246064528965688946}
   - component: {fileID: 4342271586173689268}
   - component: {fileID: -22342547979861483}
   - component: {fileID: 3690891849678365097}
+  - component: {fileID: 7365715832090912655}
   m_Layer: 0
   m_Name: semi pumpkins_1
   m_TagString: Untagged
@@ -105,31 +105,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 14.801147
---- !u!68 &3246064528965688946
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4742865041751002739}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 26.32219, y: -14.951492}
-  - {x: -25.951935, y: 14.84903}
-  - {x: -25.854034, y: -14.967972}
-  - {x: 25.627457, y: 14.307953}
-  - {x: 25.908417, y: -14.7521515}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!50 &4342271586173689268
 Rigidbody2D:
   serializedVersion: 4
@@ -165,6 +140,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Rigidbody2D: {fileID: 0}
   _generator: {fileID: 0}
+  _fallTime: 1.5
+  _slider: {fileID: 0}
 --- !u!61 &3690891849678365097
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -191,3 +168,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 59, y: 32}
   m_EdgeRadius: 0
+--- !u!60 &7365715832090912655
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4742865041751002739}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 59, y: 32}
+    newSize: {x: 59, y: 32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 3.4027312, y: -0.38564992}
+      - {x: -26.456299, y: 13.913106}
+      - {x: -25.117676, y: -14.175099}
+      - {x: 3.0836167, y: 1.3483378}
+      - {x: -5.0828056, y: -6.3678913}
+      - {x: -2.222473, y: -4.730114}
+      - {x: 10.082927, y: -3.9386501}
+      - {x: 4.090312, y: -3.2690847}
+      - {x: 25.240131, y: -14.51405}
+      - {x: 25.070883, y: 14.485738}
+      - {x: 11.015701, y: 5.560834}
+      - {x: -3.0576782, y: -3.574524}
